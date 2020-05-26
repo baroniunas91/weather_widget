@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    background: #6e55e1;
+    background: linear-gradient(329deg, rgba(110, 85, 225, 0.617919) 0%, #4144dd 100%);
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.container.flex-container .notification p {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.current-wheather {
+    width: 36.3636%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-wheather.flex-container .location {
+    width: 33%;
+    text-align: center;
+}
+
+.current-wheather.flex-container .location p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.current-wheather.flex-container .location p span {
+    font-weight: bold;
+}
+
+.current-wheather.flex-container .wheather-icon {
+    width: 33%;
+    text-align: center;
+}
+
+.current-wheather.flex-container .wheather-icon img {
+    max-width: 60px;
+}
+
+.current-wheather.flex-container .wheather-description {
+    width: 33%;
+    text-align: center;
+}
+
+.current-wheather.flex-container .wheather-description p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.current-wheather.flex-container .wheather-description .temperature p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.wheather-5daysForecast.flex-container .day-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.wheather-5daysForecast.flex-container .day-block > p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.wheather-5daysForecast.flex-container .day-block .day-icon {
+    width: 28.5714%;
+}
+
+.wheather-5daysForecast.flex-container .day-block .day-icon img {
+    width: 100%;
+}
+
+.wheather-5daysForecast.flex-container .day-block .day-night.flex-container {
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wheather-5daysForecast.flex-container .day-block .day-night.flex-container .day {
+    color: red;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.wheather-5daysForecast.flex-container .day-block .day-night.flex-container .night {
+    color: lightblue;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+@media all and (max-width: 850px) {
+    .container.flex-container {
+        padding: 10px;
+    }
+    .current-wheather {
+        width: 50%;
+    }
+    .wheather-5daysForecast.flex-container .day-block {
+        width: 20%;
+    }
+    .wheather-5daysForecast.flex-container .day-block p span {
+        display: none;
+    }
+    .day-night.flex-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .container.flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .current-wheather {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .wheather-5daysForecast.flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .wheather-5daysForecast.flex-container .day-block {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .wheather-5daysForecast.flex-container .day-block p span {
+        display: inline;
+    }
+    .day-night.flex-container {
+        flex-direction: row;
+    }
+    .current-wheather.flex-container {
+        flex-wrap: wrap;
+    }
+    .current-wheather.flex-container .location {
+        width: 100%;
+    }
+    .current-wheather.flex-container .wheather-icon {
+        width: 50%;
+    }
+    .current-wheather.flex-container .wheather-description {
+        width: 50%;
+    }
+}
+/*# sourceMappingURL=style.css.map */
