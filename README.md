@@ -1,4 +1,4 @@
 # Weather widget
 
 Please check my weather widget online:
-https://inspiring-hopper-b8a8d2.netlify.app
+https://jovial-pare-485b06.netlify.app/
