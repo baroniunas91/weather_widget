@@ -93,17 +93,17 @@ function getWeather(latitude, longitude) {
     })
 
     .then(function (data) {
-      //   console.log(data);
+      // console.log(data);
       let today = new Date();
       let year = today.getFullYear();
       let month = ((today.getMonth() + 1) / 100 + "").substring(2);
-      let date = today.getDate();
+      let date = (today.getDate() < 10 ? "0" : "") + today.getDate();
       let currentDate = `${year}-${month}-${date}`;
       // console.log(currentDate);
 
       let nextDay = new Date();
       let tomorow = nextDay.setDate(nextDay.getDate() + 1);
-      let nextday = nextDay.getDate();
+      let nextday = (nextDay.getDate() < 10 ? "0" : "") + nextDay.getDate();
       let nextDate = `${year}-${month}-${nextday}`;
       // console.log(nextDate);
 
